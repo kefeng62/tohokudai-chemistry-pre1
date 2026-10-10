@@ -2,38 +2,113 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#111827">
 
-<title>化学模試まとめ</title>
-<meta name="description" content="化学模試まとめ｜共通テスト模試・記述模試・冠模試・化学グランプリ模試">
+<title>第一回東北大化学模試</title>
+<meta name="description" content="第一回東北大化学模試｜Chemistry Only">
+<meta property="og:type" content="website">
+<meta property="og:title" content="第一回東北大化学模試">
+<meta property="og:description" content="第一回東北大化学模試｜Chemistry Only">
+<meta property="og:url" content="https://kefeng62.github.io/tohokudai-chemistry-pre1/">
+<meta property="og:image" content="https://kefeng62.github.io/tohokudai-chemistry-pre1/thumbnail2.png?v=2">
+<meta property="og:image:alt" content="第一回東北大化学模試 サムネイル">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="第一回東北大化学模試">
+<meta name="twitter:description" content="第一回東北大化学模試｜Chemistry Only">
+<meta name="twitter:image" content="https://kefeng62.github.io/tohokudai-chemistry-pre1/thumbnail22.png?v=2">
 
 <link rel="stylesheet" href="style.css">
 
 <style>
-/* 冠模試：横スクロール */
-.mock-grid-scroll {
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 20px;
-  overflow-x: auto;
-  overflow-y: hidden;
-  padding: 4px 2px 16px;
-  scroll-snap-type: x proximity;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: thin;
+/* サムネイル */
+.site-thumbnail2{
+  display:block;
+  width:100%;
+  max-width:900px;
+  margin:0 auto 24px;
+  text-decoration:none;
 }
 
-.mock-grid-scroll .mock-card {
-  flex: 0 0 280px;
-  min-width: 0;
-  scroll-snap-align: start;
+.site-thumbnail2 img{
+  display:block;
+  width:100%;
+  height:auto;
+  border-radius:14px;
+  border:1px solid var(--line);
+  box-shadow:0 8px 24px rgba(15,23,42,.08);
 }
 
-/* スマートフォン */
-@media (max-width: 600px) {
-  .mock-grid-scroll .mock-card {
-    flex-basis: 78%;
+.site-thumbnail2:hover img{
+  opacity:.92;
+}
+
+/* 模試タイトル部分 */
+.mock-intro{
+  text-align:center;
+  margin-bottom:24px;
+}
+
+.mock-intro h2{
+  margin:6px 0 10px;
+}
+
+.mock-intro p{
+  color:#475569;
+}
+
+/* PDFボタン */
+.hero-actions{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  width:100%;
+  max-width:900px;
+  margin:0 auto;
+}
+
+.hero-actions .button{
+  width:100%;
+  min-height:58px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:14px 18px;
+  border-radius:14px;
+  text-decoration:none;
+  font-weight:700;
+  font-size:1rem;
+}
+
+.hero-actions .button.primary{
+  background:#2563eb;
+  color:#fff;
+}
+
+.hero-actions .button.primary:hover{
+  background:#1d4ed8;
+}
+
+.hero-actions .button.secondary{
+  background:#fff;
+  color:#1f2937;
+  border:1px solid #d1d5db;
+}
+
+.hero-actions .button.secondary:hover{
+  background:#f8fafc;
+  border-color:#93c5fd;
+}
+
+@media(max-width:720px){
+  .site-thumbnail2{
+    margin-bottom:20px;
+  }
+
+  .hero-actions .button{
+    min-height:58px;
+    font-size:1rem;
   }
 }
 </style>
@@ -42,142 +117,132 @@
 <body>
 
 <header class="site-header">
-  <div class="wrap">
-    <p class="eyebrow">CHEMISTRY MOCK EXAMS</p>
-    <h1>化学模試まとめ</h1>
-    <p class="lead">私が作成した化学模試をここにまとめています。</p>
-    <p class="writer">
-      Writer：けふぇん（
-      <a href="https://x.com/samarium62ch"
-         target="_blank"
-         rel="noopener">@samarium62ch</a>
-      ）
-    </p>
+  <div class="wrap header-inner">
+
+    <div>
+      <div class="eyebrow">TOHOKU CHEMISTRY MOCK</div>
+
+      <div class="title-row">
+        <h1>第一回東北大化学模試</h1>
+
+        <div class="credits">
+          <span>
+            Writer：けふぇん（
+            <a href="https://x.com/samarium62ch"
+               target="_blank"
+               rel="noopener">
+              @samarium62ch
+            </a>
+            ）
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <a
+      class="summary-link"
+      href="https://kefeng62.github.io/-chemistry-mock-kefene/"
+    >
+      化学模試まとめ
+    </a>
+
   </div>
 </header>
 
+
 <main class="wrap">
 
-  <!-- 01 共通テスト模試 -->
-  <section class="category">
-    <div class="category-title">
-      <span class="category-number">01</span>
-      <div>
-        <h2>共通テスト模試</h2>
-        <p>共通テスト形式の化学模試</p>
-      </div>
+  <section class="hero">
+
+    <!-- サムネイル -->
+    <a
+      class="site-thumbnail2"
+      href="./"
+      aria-label="第一回東北大化学模試トップページ"
+    >
+      <img
+        src="thumbnail2.png"
+        alt="第一回東北大化学模試 サムネイル"
+      >
+    </a>
+
+
+    <!-- 模試情報 -->
+    <div class="mock-intro">
+
+      <p class="eyebrow">CHEMISTRY ONLY</p>
+
+      <h2>第一回東北大化学模試</h2>
+
+      <p>
+        問題冊子、解答用紙、解答解説を閲覧・ダウンロードできます。
+      </p>
+
+      <p class="small">
+        配点 100点 ／ 制限時間 75分
+      </p>
+
     </div>
 
-    <div class="mock-grid">
-      <div class="empty-card">公開されている模試はありません。</div>
-    </div>
-  </section>
 
-  <!-- 02 記述模試 -->
-  <section class="category">
-    <div class="category-title">
-      <span class="category-number">02</span>
-      <div>
-        <h2>記述模試</h2>
-        <p>記述式の化学模試</p>
-      </div>
-    </div>
+    <!-- PDFボタン -->
+    <div class="hero-actions">
 
-    <div class="mock-grid">
-      <div class="empty-card">公開されている模試はありません。</div>
-    </div>
-  </section>
-
-  <!-- 03 冠模試 -->
-  <section class="category">
-    <div class="category-title">
-      <span class="category-number">03</span>
-      <div>
-        <h2>冠模試</h2>
-        <p>各大学の形式の化学模試</p>
-      </div>
-    </div>
-
-    <div class="mock-grid mock-grid-scroll">
-
-      <!-- 東大化学模試 -->
-      <a class="mock-card"
-         href="https://kefeng62.github.io/todai-chemistry-pre1/">
-
-        <div class="thumb-wrap">
-          <img
-            src="https://kefeng62.github.io/todai-chemistry-pre1/thumbnail.png"
-            alt="第一回東大化学模試 サムネイル">
-        </div>
-
-        <div class="mock-info">
-          <h3>第一回東大化学模試</h3>
-          <p class="date">公開日時：2026年9月29日</p>
-        </div>
+      <a
+        class="button primary"
+        href="question.pdf"
+      >
+        問題PDF(B5)を開く
       </a>
 
-      <!-- 東北大化学模試 -->
-      <a class="mock-card"
-         href="https://kefeng62.github.io/tohokudai-chemistry-pre1/">
+      <a
+        class="button secondary"
+        href="answer-sheet.pdf"
+      >
+        解答用紙(B4)を開く
+      </a>
 
-        <div class="thumb-wrap">
-          <img
-            src="https://kefeng62.github.io/tohokudai-chemistry-pre1/thumbnail2.png"
-            alt="第一回東北大化学模試 サムネイル">
-        </div>
-
-        <div class="mock-info">
-          <h3>第一回東北大化学模試</h3>
-        </div>
+      <a
+        class="button secondary"
+        href="第一回東北大化学模試解答解説.pdf"
+      >
+        解答・解説PDFを開く
       </a>
 
     </div>
+
   </section>
 
-  <!-- 04 化学グランプリ模試 -->
-  <section class="category">
-    <div class="category-title">
-      <span class="category-number">04</span>
-      <div>
-        <h2>化学グランプリ模試</h2>
-        <p>化学グランプリ形式の模試</p>
-      </div>
-    </div>
 
-    <div class="mock-grid">
-      <a class="mock-card"
-         href="https://kefeng62.github.io/pre-chemistry-grand-prix-1/">
-
-        <div class="thumb-wrap">
-          <img
-            src="chemistry-grand-prix-1.png"
-            alt="第一回化学グランプリ模試 サムネイル">
-        </div>
-
-        <div class="mock-info">
-          <h3>第一回化学グランプリ模試</h3>
-          <p class="date">公開日時：2026年9月22日</p>
-        </div>
-      </a>
-    </div>
-  </section>
-
-  <!-- 注意書き -->
+  <!-- 注意 -->
   <section class="card notice-card">
+
+    <h2>注意</h2>
+
     <ul>
-      <li>マーク模試には自己採点入力機能が付随しています。</li>
-      <li>記述模試は私のTwitterアカウントのDMへ答案を送っていただければ採点いたします。</li>
-      <li>問題や答案、結果をSNSに投稿していただいて構いません。</li>
-      <li>Testerをやってみたい方はいつでも連絡ください！</li>
+      <li>
+        問題冊子の注意事項に従って受験してください。
+      </li>
+
+      <li>
+        解答用紙は本ページからダウンロードできます。
+      </li>
+
+      <li>
+        本模試は記述模試であるため、自己採点機能はありません。
+      </li>
     </ul>
+
   </section>
 
 </main>
 
+
 <footer class="site-footer">
-  <div class="wrap">化学模試まとめ</div>
+  <div class="wrap">
+    第一回東北大化学模試
+  </div>
 </footer>
 
 </body>
 </html>
-```
